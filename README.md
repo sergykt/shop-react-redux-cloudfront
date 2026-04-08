@@ -1,6 +1,16 @@
 # React-shop-cloudfront
 
-This is frontend starter project for nodejs-aws mentoring program. It uses the following technologies:
+This is frontend starter project for nodejs-aws mentoring program.
+
+## Deployment
+
+**S3 URL:**
+[https://deploywebappstack-deploymentfrontendbucket67ceb713-i0fyfwfombc8.s3.us-east-1.amazonaws.com/](https://deploywebappstack-deploymentfrontendbucket67ceb713-i0fyfwfombc8.s3.us-east-1.amazonaws.com/)
+
+**Cloudfront:**
+[https://d67pyit89tiwq.cloudfront.net/](https://d67pyit89tiwq.cloudfront.net/)
+
+## Tech stack
 
 - [Vite](https://vitejs.dev/) as a project bundler
 - [React](https://beta.reactjs.org/) as a frontend framework
@@ -38,34 +48,30 @@ Runs tests in console, in browser or with coverage.
 
 Runs linting and formatting for all files in `src` folder.
 
-### `client:deploy`, `client:deploy:nc`
+### `cdk:build`
 
-Deploy the project build from `dist` folder to configured in `serverless.yml` AWS S3 bucket with or without confirmation.
+Builds frontend assets and prepares files used by the CDK stack.
 
-### `client:build:deploy`, `client:build:deploy:nc`
+### `cdk:deploy`
 
-Combination of `build` and `client:deploy` commands with or without confirmation.
+Deploys the CDK infrastructure from the `infra` folder.
 
-### `cloudfront:setup`
+### `cdk:invalidate`
 
-Deploy configured in `serverless.yml` stack via CloudFormation.
+Syncs build files to the S3 bucket and invalidates CloudFront distribution cache.
 
-### `cloudfront:domainInfo`
+### `cdk:build:deploy`
 
-Display cloudfront domain information in console.
+Builds assets and then deploys the CDK stack.
 
-### `cloudfront:invalidateCache`
+### `cdk:build:invalidate`
 
-Invalidate cloudfront cache.
+Builds assets, syncs them to the deployment S3 bucket, and invalidates the CloudFront distribution cache.
 
-### `cloudfront:build:deploy`, `cloudfront:build:deploy:nc`
+### `cdk:synth`
 
-Combination of `client:build:deploy` and `cloudfront:invalidateCache` commands with or without confirmation.
+Synthesizes the CDK CloudFormation template.
 
-### `cloudfront:update:build:deploy`, `cloudfront:update:build:deploy:nc`
+### `cdk:destroy`
 
-Combination of `cloudfront:setup` and `cloudfront:build:deploy` commands with or without confirmation.
-
-### `serverless:remove`
-
-Remove an entire stack configured in `serverless.yml` via CloudFormation.
+Destroys all resources created by the CDK stack.
