@@ -10,6 +10,9 @@ This is frontend starter project for nodejs-aws mentoring program.
 **Cloudfront:**
 [https://d67pyit89tiwq.cloudfront.net/](https://d67pyit89tiwq.cloudfront.net/)
 
+**Api Gateway:**
+[https://hs0jugtsji.execute-api.us-east-1.amazonaws.com/prod/](https://hs0jugtsji.execute-api.us-east-1.amazonaws.com/prod/)
+
 ## Tech stack
 
 - [Vite](https://vitejs.dev/) as a project bundler
