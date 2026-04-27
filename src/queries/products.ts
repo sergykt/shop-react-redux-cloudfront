@@ -46,6 +46,12 @@ export function useRemoveProductCache() {
   );
 }
 
+export function useCreateProduct() {
+  return useMutation((values: Omit<AvailableProduct, "id">) =>
+    axios.post<AvailableProduct>(`${API_PATHS.bff}/products`, values)
+  );
+}
+
 export function useUpsertAvailableProduct() {
   return useMutation((values: AvailableProduct) =>
     axios.put<AvailableProduct>(`${API_PATHS.bff}/products`, values, {
