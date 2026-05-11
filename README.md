@@ -5,13 +5,10 @@ This is frontend starter project for nodejs-aws mentoring program.
 ## Deployment
 
 **S3 URL:**
-[https://deploywebappstack-deploymentfrontendbucket67ceb713-i0fyfwfombc8.s3.us-east-1.amazonaws.com/](https://deploywebappstack-deploymentfrontendbucket67ceb713-i0fyfwfombc8.s3.us-east-1.amazonaws.com/)
+[https://deploywebappstack-deploymentfrontendbucket67ceb713-9abofuzs7msm.s3.us-east-1.amazonaws.com/](https://deploywebappstack-deploymentfrontendbucket67ceb713-9abofuzs7msm.s3.us-east-1.amazonaws.com/)
 
 **Cloudfront:**
-[https://d67pyit89tiwq.cloudfront.net/](https://d67pyit89tiwq.cloudfront.net/)
-
-**Api Gateway:**
-[https://4xxckkyhoj.execute-api.us-east-1.amazonaws.com/prod/](https://4xxckkyhoj.execute-api.us-east-1.amazonaws.com/prod/)
+[https://d30f3xji9dtliy.cloudfront.net](https://d30f3xji9dtliy.cloudfront.net)
 
 ## Tech stack
 
